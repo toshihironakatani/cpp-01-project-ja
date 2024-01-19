@@ -85,6 +85,7 @@ int update(CarState &current_state) {
       return GAME_SUCCESS;
     } else {
       std::cout << "You don't have a passenger. Pick them up.";
+      std::cout << std::endl;
       std::system("pause");
     }
   }

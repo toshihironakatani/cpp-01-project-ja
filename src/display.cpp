@@ -92,6 +92,19 @@ void update(state::CarState current_state, command::Availability availability, i
   _show_command(current_state, availability);
 }
 
+void game_success(int count){
+      std::system("cls");
+      std::cout << "Arrive at the destination!" << std::endl;
+      std::cout << "Your score is: " << count << std::endl;
+      std::system("pause");
+}
+
+void invalid_input(){
+      std::cout << "Invalid command. Input valid command." << std::endl;
+      std::cout << "Input command: " << std::endl;
+      std::system("pause");
+}
+
 void end() {
   std::system("cls");
   std::cout << "Finish Game" << std::endl;

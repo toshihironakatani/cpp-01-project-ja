@@ -36,11 +36,7 @@ int main() {
     }
 
     if (game_status == GAME_SUCCESS) {
-      // game success
-      std::system("cls");
-      std::cout << "Arrive at the destination!" << std::endl;
-      std::cout << "Your score is: " << turn_count << std::endl;
-      std::system("pause");
+      display::game_success(turn_count);
       break;
     }
     map::update(current_state.x, current_state.y); // 地図状態を更新

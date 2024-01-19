@@ -1,4 +1,5 @@
 #include "command.h"
+#include "display.h"
 #include <iostream>
 #include <sstream>
 
@@ -116,9 +117,7 @@ int execute_command(state::CarState &current_state,
     }
 
     if (is_invalid_command) {
-      std::cout << "Invalid command. Input valid command." << std::endl;
-      std::cout << "Input command: " << std::endl;
-      std::system("pause");
+        display::invalid_input();
     }
   }
   return 0;
